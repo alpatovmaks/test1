@@ -1,0 +1,6 @@
+body { font-family: system-ui, sans-serif; max-width: 800px; margin: 2rem auto; }
+nav a { margin-right: 1rem; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border-bottom: 1px solid #ddd; padding: 0.5rem; text-align: left; }
+form label { display: block; margin: 0.5rem 0; }
+.error { color: #b00020; }
