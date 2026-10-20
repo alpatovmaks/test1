@@ -1,0 +1,28 @@
+
+{{define "layout"}}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{.Title}}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>💰 Учёт трат</h1>
+        <nav>
+            <a href="/">Список</a> |
+            <a href="/add">Добавить трату</a>
+        </nav>
+    </header>
+
+    <main>
+        {{template "content" .}}
+    </main>
+
+    <footer>
+        <small>© 2025 Expenses App</small>
+    </footer>
+</body>
+</html>
+{{end}}

@@ -1,0 +1,15 @@
+
+{{define "content"}}
+<h2>Удалить трату?</h2>
+
+<table>
+    <tr><th>Дата</th><td>{{.Expense.Date.Format "02.01.2006"}}</td></tr>
+    <tr><th>Описание</th><td>{{.Expense.Description}}</td></tr>
+    <tr><th>Сумма</th><td>{{printf "%.2f" .Expense.Amount}} ₽</td></tr>
+</table>
+
+<form method="POST" action="/delete?id={{.Expense.ID}}">
+    <button type="submit">Удалить</button>
+    <a href="/">Отмена</a>
+</form>
+{{end}}
